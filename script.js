@@ -17,6 +17,11 @@ let hasPlayed = false; // L'utilisateur n'a pas encore joué
 let isSpinning = false;
 const arc = (2 * Math.PI) / rewards.length;
 
+/* 🔥 ICI on attend la police */
+document.fonts.load("bold 30px Montserrat").then(() => {
+    drawWheel();
+});
+
 function drawWheel() {
     for (let i = 0; i < rewards.length; i++) {
         const angle = startAngle + i * arc;
