@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roue Solidaire - SOS Villages d’Enfants</title>
+
+  <!-- Lien vers le fichier CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="SOS">
+      <img src="Images/leclerc X sos villages d'enfants .png" alt="Logo de l'entrerpise Leclerc">
+    </div>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Tentez votre chance en cliquant sur la Roue Solidaire</h2>
+
+      <div class="wheel-container">
+        <div class="pointer"></div>
+        <canvas id="wheel" width="340" height="340"></canvas>
+
+        <!-- Image centrale -->
+        <img src="Images/logo la roue solidaire.png" alt="Logo central" class="wheel-center-image" />
+      </div>
+
+      <div class="result" id="result"></div>
+
+      <div class="description">
+        <p>
+          Cette roue solidaire a été créée en partenariat avec l’esprit d’engagement de <strong>Leclerc</strong>
+          pour soutenir l’association <strong>SOS Villages d’Enfants</strong> .
+        </p>
+        <p>
+          Chaque participation contribue à générer des dons afin d’aider des enfants à grandir avec leurs frères et
+          soeurs dans un environnement
+          stable et protecteur.
+        </p>
+        <p>
+          Faites tourner la roue, remportez votre gain sous forme de bon d'achat, et participez à une action solidaire.
+        </p>
+      </div>
+      <div class="share-container">
+        <button class="share-btn" onclick="sharePage()">
+          Partager cette action solidaire
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      © 2026 – Jeu solidaire en partenariat avec SOS Villages d’Enfants |
+      <a href="mentions-legales.html">Mentions légales</a> |
+      <a href="cgu.html">CGU</a>
+    </p>
+  </footer>
+
+  <div class="popup-overlay" id="popup">
+    <div class="popup">
+      <h3>Merci pour votre participation</h3>
+      <p id="popup-message"></p>
+      <a href="https://www.sosve.org" target="_blank" rel="noopener noreferrer" class="popup-link">
+        Découvrir l’association
+      </a>
+      <button class="popup-close" onclick="closePopup()">Fermer</button>
+    </div>
+  </div>
+
+  <!-- Lien vers le fichier JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
