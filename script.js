@@ -140,3 +140,10 @@ function sharePage() {
         alert("Lien copié ! Vous pouvez le partager avec vos proches.");
     }
 }
+
+window.addEventListener("load", () => {
+    if (!sessionStorage.getItem("pageRefreshed")) {
+        sessionStorage.setItem("pageRefreshed", "true");
+        window.location.reload();
+    }
+});
